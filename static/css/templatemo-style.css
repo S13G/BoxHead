@@ -39,7 +39,7 @@ p {
 .section-heading {
   text-align: left;
   position: relative;
-  margin-bottom: 10px !important;
+  margin-bottom: 60px;
 }
 
 .section-heading h1 {
@@ -414,12 +414,18 @@ header {
 }
 
 .Modern-Slider .item-1 .image {
-  background-image: url(../img/banner.jpg)
+  background-image: url(../img/banner.jpeg);
 }
 
 .Modern-Slider .item-2 .image {
-  background-image: url(../img/slide_1.jpg);
+  background-image: url(../img/boxhead1.JPG);
 }
+
+.Modern-Slider .item-3 .image {
+  background-image: url(../img/boxhead2.JPG);
+}
+
+.Modern-Slider .PrevArrow:before{content:'\f104';}
 
 .Modern-Slider .item .image {
   animation: zoomin 12s ease-in-out infinite alternate;
@@ -431,7 +437,7 @@ header {
     100% {-webkit-transform: scale(1.2);}
 }
 
-.Modern-Slider {background:red;}
+.Modern-Slider {background:transparent;}
 
 /* ==== Slick Slider Css Ruls === */
 .slick-slider{position:relative;display:block;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}
@@ -449,13 +455,6 @@ header {
 
 
 /* Featured Style */
-
-#featured-top {
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 80px;
-  border-bottom: 1px solid #eee;
-}
 
 #featured {
   padding-left: 60px;

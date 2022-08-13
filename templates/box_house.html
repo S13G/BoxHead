@@ -1,0 +1,29 @@
+{% extends 'home.html' %}
+
+{% load static %}
+{% block title %}
+    BoxHouse
+{% endblock %}
+
+{% block content %}
+    <div class="page-content">
+        <section id="featured" class="content-section">
+            <div class="section-heading">
+                <h1><em>{{ boxes.title }}</em></h1>
+            </div>
+            <div class="section-content">
+                <div class="item">
+                    <div class="image image-fix">
+                        <img src="{% static 'img/boxhead1.jpg' %}" alt="">
+                        <img src="{% static 'img/b5.jpg' %}" alt="">
+                        <img src="{% static 'img/boxhead2.jpg' %}" alt="">
+                    </div>
+                    <div class="text-content">
+                        <h4></h4>
+                        <span>{{ boxes.description }}</span>
+                    </div>
+                </div>
+            </div>
+    </section>
+    </div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'home.html' %}
+
+{% load static %}
+{% block title %}
+    Long Term
+{% endblock %}
+
+{% block content %}
+    <div class="page-content">
+        <section id="featured" class="content-section">
+            <div class="section-heading">
+                <h1><em>{{ long.title }}</em></h1>
+            </div>
+            <div class="section-content">
+                <div class="item">
+                    <div class="text-content">
+                        <span style="font-size: 2em;">{{ long.description }}</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}
