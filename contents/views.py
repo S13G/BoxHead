@@ -1,9 +1,19 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render
 
 # Create your views here.
 from contents.models import Content
 
 
-def home(request, id):
-    content = get_object_or_404(Content, pk=id)
-    return render(request, 'home.html', context={"content": content})
+def index(request):
+    return render(request, 'home.html')
+
+
+def concept(request):
+    content = Content.objects.get(pk=2)
+    return render(request, 'test.html', context={"content": content})
+
+
+def box(request):
+    boxes = Content.objects.get(pk=4)
+    return render(request, 'test.html', context={"boxes": boxes})
+

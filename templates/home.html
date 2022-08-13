@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
     <link rel="stylesheet" href="{% static "css/bootstrap-theme.min.css" %}">
     <link rel="stylesheet" href="{% static "css/fontAwesome.css" %}">
-    <link rel="stylesheet" href="{% static "css/light-box.css" %}">
-    <link rel="stylesheet" href="{% static "css/owl-carousel.css" %}">
     <link rel="stylesheet" href="{% static "css/templatemo-style.css" %}">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
@@ -44,12 +42,12 @@
 
 <div class="sidebar-navigation hidde-sm hidden-xs">
     <div class="logo">
-        <a href="#">BOXHEADS<em>NFT</em></a>
+        <a href="#">BOXHEADS<em> NFT</em></a>
     </div>
     <nav>
         <ul>
             <li>
-                <a href="#top">
+                <a href="#featured-top">
                     <span class="rect"></span>
                     <span class="circle"></span>
                     Concepts
@@ -92,36 +90,42 @@
     </ul>
 </div>
 
-<div class="slider">
-    <div class="Modern-Slider content-section" id="top">
-        <!-- Item -->
-        <div class="item item-1">
-            <div class="img-fill">
-                <div class="image"></div>
+<div class="page-content">
+    <section id="featured" class="content-section">
+        <div class="section-heading">
+            <h1><em>{{ content.title }}</em></h1>
+        </div>
+        <div class="section-content">
+            <div class="item">
+                <div class="image">
+                    <img src="{% static 'img/banner.jpg' %}" alt="">
+                </div>
+                <div class="text-content">
+                    <h4>Lorem ipsum dolor</h4>
+                    <span>Proin et sapien</span>
+                    <p>#1 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                        Curae;
+                        Sed at massa turpis. Fusce ut pretium dui, vitae ullamcorper velit.</p>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
 
-
-<div class="page-content">
     <section id="featured" class="content-section">
         <div class="section-heading">
             <h1>Box<em>House</em></h1>
         </div>
         <div class="section-content">
-            <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <div class="image">
-                        <img src="img/featured_1.jpg" alt="">
-                    </div>
-                    <div class="text-content">
-                        <h4>Lorem ipsum dolor</h4>
-                        <span>Proin et sapien</span>
-                        <p>#1 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                            Curae;
-                            Sed at massa turpis. Fusce ut pretium dui, vitae ullamcorper velit.</p>
-                    </div>
+            <div class="item">
+                <div class="image">
+                    <img src="{% static "img/boxhead1.JPG" %}" alt="">
+                </div>
+                <div class="text-content">
+                    <h4>{{ boxes.title }}</h4>
+                    <span>Proin et sapien</span>
+                    <p>#1 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                        Curae;
+                        Sed at massa turpis. Fusce ut pretium dui, vitae ullamcorper velit.</p>
                 </div>
             </div>
         </div>
@@ -129,7 +133,7 @@
 
     <section id="projects" class="content-section">
         <div class="section-heading">
-            <h1>Short<em>Term Goals</em></h1>
+            <h1>Short<em> Term Goals</em></h1>
         </div>
     </section>
 
@@ -147,7 +151,7 @@
 
     <section id="blog" class="content-section">
         <div class="section-heading">
-            <h1>Long<br><em>Term Target</em></h1>
+            <h1>Long<em> Term Target</em></h1>
         </div>
     </section>
 </div>
@@ -162,7 +166,7 @@
 <script src="{% static "js/main.js" %}"></script>
 
 <script>
-    // Hide Header on on scroll down
+    // Hide Header on scroll down
     let didScroll;
     let lastScrollTop = 0;
     let delta = 5;
