@@ -25,11 +25,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'bhjdis!&@67tuur8ts)h!c&2$=4-92%!wpf1^^0-6v!9^x+_a%')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
+DEBUG = True
 
-DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
+# DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'True'
 
-ALLOWED_HOSTS = ['127.0.0.1', 'boxheadsnft.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition

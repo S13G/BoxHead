@@ -1,19 +1,21 @@
-.image-fix, .image-fix2 {
-    width: 90%;
+.image-fix {
+    width: 100%;
     display: flex;
-    gap: 50px;
+    gap: 30px;
 }
 
 .image > img {
     box-shadow: 3px 2px 10px rgba(50, 50, 50, 0.3);
+    width: 40%;
 }
+
 
 .section-heading {
     margin-bottom: 20px;
 }
 
 .text-content {
-    line-height: 30px;
+    line-height: 28px;
 }
 
 .image-cover {
@@ -23,6 +25,15 @@
     column-gap: 10px;
     row-gap: 10px;
     align-items: center;
+    border: 2px solid #a6a2a2;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 1px 1px 10px #a6a2a2;
+}
+
+.image-fix {
+    width: 80%;
     border: 2px solid #a6a2a2;
     border-radius: 20px;
     overflow: hidden;
