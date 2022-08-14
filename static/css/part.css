@@ -47,3 +47,19 @@
     justify-content: center;
     gap: 40px;
 }
+
+.icon-cover {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+ul li a img {
+    height: 20px;
+    color: white;
+}
+
+#twit {
+    height: 15px;
+}

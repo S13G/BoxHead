@@ -39,6 +39,13 @@
                 <li><a href="{% url 'short_term' %}">Short Term Goals</a></li>
                 <li><a href="{% url 'long_term' %}">Long Term Goals</a></li>
                 <li><a href="{% url 'box_map' %}">The Box Map</a></li>
+                <div class="icon-cover">
+                    <li><a href="https://twitter.com/SOL_BoxHeads?t=lQEebwiBYe-l_iPCotMUHg&s=09">
+                        <img id="twit" src="{% static 'img/twit.png' %}">
+                    </a></li>
+                    <li><a id="man-discord" href="https://discord.gg/euGWJRBEhN"><img src="
+                    {% static 'img/discord.png' %}"></a></li>
+                </div>
             </ul>
         </nav>
     </div>
@@ -88,9 +95,13 @@
         </ul>
     </nav>
     <ul class="social-icons">
-        <li><a href="https://twitter.com/SOL_BoxHeads?t=lQEebwiBYe-l_iPCotMUHg&s=09"><i class="fa fa-twitter"></i></a>
-        </li>
-        <li><a href="https://discord.gg/euGWJRBEhN"><i class="fa fa-diamond"></i></a></li>
+        <div class="icon-cover">
+            <li><a href="https://twitter.com/SOL_BoxHeads?t=lQEebwiBYe-l_iPCotMUHg&s=09">
+                <img id="twit" src="{% static 'img/twit.png' %}">
+            </a></li>
+            <li><a id="man-discord" href="https://discord.gg/euGWJRBEhN"><img src="
+                    {% static 'img/discord.png' %}"></a></li>
+        </div>
     </ul>
 </div>
 
@@ -138,7 +149,7 @@
             hasScrolled();
             didScroll = false;
         }
-    }, 250);
+    }, 100);
 
     function hasScrolled() {
         var st = $(this).scrollTop();

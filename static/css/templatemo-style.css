@@ -759,7 +759,6 @@ header {
     color: #45489a;
 }
 
-
 #blog .tabs .active:hover {
     color: #fff;
 }
@@ -1023,11 +1022,11 @@ header {
     }
 
     .sidebar-navigation nav {
-        top: 57%;
+        top: 62%;
     }
 
     .sidebar-navigation nav a {
-        font-size: 17px;
+        font-size: 18px;
     }
 
 
