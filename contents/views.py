@@ -6,7 +6,7 @@ from contents.models import Content
 
 def concept(request):
     content = Content.objects.get(pk=1)
-    return render(request, 'home.html', context={"concept": content})
+    return render(request, 'index.html', context={"concept": content})
 
 
 def box_house(request):
