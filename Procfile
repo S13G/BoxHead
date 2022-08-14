@@ -1,1 +1,1 @@
-web: gunicorn boxheads.wsgi --log-file -
+web: gunicorn boxheadsnft.wsgi --log-file -
