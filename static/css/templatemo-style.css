@@ -553,6 +553,10 @@ header {
     opacity: 0;
 }
 
+.image-fix, .image-cover {
+    width: 100%;
+}
+
 #featured .item:hover .featured-button a {
     bottom: 0;
     opacity: 1;
@@ -575,7 +579,7 @@ header {
 }
 
 #featured .item .text-content span {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 600;
     color: #7a7a7a;
     letter-spacing: 0.5px;
@@ -910,7 +914,7 @@ header {
 
 .footer p {
     margin-bottom: 0px;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 80px;
     color: #fff;
     letter-spacing: 0.5px;
@@ -961,6 +965,10 @@ header {
         padding-right: 100px;
     }
 
+     .sidebar-navigation nav a {
+        font-size: 18px;
+    }
+
 }
 
 @media (min-width: 901px) and (max-width: 960px) {
@@ -977,7 +985,7 @@ header {
     }
 
     .sidebar-navigation nav {
-        top: 60%;
+        top: 50%;
     }
 
     .sidebar-navigation nav a {
@@ -1015,7 +1023,7 @@ header {
     }
 
     .sidebar-navigation nav {
-        top: 65%;
+        top: 57%;
     }
 
     .sidebar-navigation nav a {
@@ -1041,4 +1049,11 @@ header {
         width: 80%
     }
 
+    .image-cover {
+        width: 30%;
+    }
+
+    .image-fix {
+        width: 80%;
+    }
 }
